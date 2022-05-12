@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Future-R</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #0b2642;
+        border-bottom: 8px solid #238530;
+      }
+
+      .container {
+        width: 960px;
+        margin: 0 auto;
+      }
+
+      header,
+      section {
+        margin-bottom: 96px;
+      }
+
+      h2 {
+        margin-bottom: 48px;
+        font-size: 36px;
+        letter-spacing: -0.5px;
+      }
+
+      .grid-3-cols {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 80px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        background-color:#238530;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: 500;
+        transition: all 0.6s;
+
+        border-radius: 100px;
+      }
+
+      .btn:hover,
+      .btn:active {
+        background-color: #17ca2f;
+      }
+
+      .btn--big {
+        padding: 16px 32px;
+        font-size: 18px;
+      }
+
+      .btn--small {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+
+      img {
+        border-radius: 13px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 80px;
+        margin-top: 64px;
+      }
+
+      .header-text-box {
+        align-self: center;
+      }
+
+      h1 {
+        margin-bottom: 32px;
+        font-size: 44px;
+        line-height: 1.1;
+        letter-spacing: -1px;
+      }
+
+      .header-text {
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .features-icon {
+        stroke: #9c0532;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 24px;
+      }
+
+      .features-title {
+        margin-bottom: 16px;
+        font-size: 20px;
+      }
+
+      .features-text {
+        font-size: 18px;
+        line-height: 1.7;
+      }
+
+      .testimonial-section {
+        background-color: #238530;
+        color: #fff;
+        padding: 24px;
+        border-radius: 13px;
+      }
+
+      .testimonial-box {
+        grid-column: 2 / -1;
+        align-self: center;
+      }
+
+      .testimonial-box h2 {
+        margin-bottom: 24px;
+        font-size: 24px;
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #e6fcf5;
+      }
+
+      .testimonial-author {
+        color: #c3fae8;
+      }
+
+      .chair {
+        box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.07);
+        border-radius: 12px;
+      }
+
+      .chair img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .chair-box {
+        padding: 32px;
+      }
+
+      h3 {
+        margin-bottom: 24px;
+        font-size: 20px;
+      }
+
+      .chair-details {
+        list-style: none;
+        margin-bottom: 48px;
+      }
+
+      .chair-details li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+
+      .chair-details li:last-child {
+        margin-bottom: 0;
+      }
+
+      .chair-icon {
+        stroke:#238530;
+        width: 24px;
+        height: 24px;
+      }
+
+      .chair-price {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        align-items: center;
+      }
+
+      footer {
+        margin-bottom: 48px;
+        font-size: 14px;
+        color: #495057;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-text-box">
+          <h1>Noi suntem începutul viitorului</h1>
+          <p class="header-text">
+            Datorită noua viața ta va fi mult mai ușoară.
+            De astazi poți petrece timpul alături de cei dragi, fără a te preocupa de treburile casnice.
+            Proiectăm, făurim și livram cei mai noi ROBOȚI, ce au grijă de satisfacția și împlinirea ta sufletească.
+            
+       </p>
+          <a class="btn btn--big" href="toti-robotii.html">Vezi Produsele</a>
+        </div>
+        <img src="1.jpg" alt="Photo" />
+      </header>
+
+      <section>
+        <h2>De ce să alegeți produsele noastre?</h2>
+        <div class="grid-3-cols">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="features-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+              />
+            </svg>
+            <p class="features-title"><strong>Sustenabilitate</strong></p>
+            <p class="features-text">
+            Aceste invenții sunt concepute după cele mai noi standarte, deci în toate setările
+            și serviciile pe care le oferă nu veți vedea urmă de solvenți,detergenți sau substanțe chimice dăunătoare.
+            Aparatele sunt în totalitate Eco-Friendly și Moderne menite să coexiste alături de biosferă. 
+            </p>
+          </div>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="features-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <p class="features-title">
+              <strong>Comoditate</strong>
+            </p>
+            <p class="features-text">
+            Vă puteți planifica timpul în cele mai frumoase moduri fără a vă gândi la:
+            Curățenie,
+            Mâncare,
+            Facturi sau Alte obligațiuni
+            Savurați momente de neuitat în alte moduri.
+          </p>
+          </div>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="features-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              />
+            </svg>
+            <p class="features-title">
+              <strong>Siguranță</strong>
+            </p>
+            <p class="features-text">
+              Trebuie să plecați în vacanță și nu știți cine vă va îngriji sau păzi casa?
+              Noi suntem soluția.Doar de la un click distanță puteți programa totul.Astfel veți avea parte de timp 
+              pentru dezvoltare personală, profesională și grijă pentru propria sănătate.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="grid-3-cols">
+          <img src="2.jpg" alt="People sitting on chairs" />
+          <div class="testimonial-box">
+            <h2>"Acest MiniRobot 3000 a schimbat mult viața fiului meu"</h2>
+            <blockquote class="testimonial-text">
+              Atunci când nu reușesc sa inteleg totul la scoala MR imi sare mereu in ajutor.
+              Îmi oferă meditatii la orice obiect, mă ascultă și ajută cu sfaturi atunci când am nevoie.
+              Cel mai mult îmi place cand MR îmi povestește noi informații și curiozități despre Știință.
+            </blockquote>
+            <p class="testimonial-author">&mdash; Lino și Eduard Johnson</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="grid-3-cols">
+          <img src="3.jpg" alt="wine testing" />
+          <div class="testimonial-box">
+            <h2>"KitchenAlt este ajutorul meu devotat la muncă și nu numai"</h2>
+            <blockquote class="testimonial-text">
+              Fiind Șef-Bucătar am mereu nevoia de a potrivi bucatele pe care le pregătesc cu o băutura bună.
+              KitchenAlt îmi este camarad devotat, mereu a făcut potriviri corecte și nu a dat niciodată greș.
+              De fiecare dată clienții rămân plăcut impresionați de combinațiile de aromă, gust, miros și consistență pe care le obținem.
+            </blockquote>
+            <p class="testimonial-author">&mdash;Ava Jacklin</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="grid-3-cols">
+          <img src="4.jpg" alt="bucatarie" />
+          <div class="testimonial-box">
+            <h2>"Acum pot spune că sunt un adevărat patiser"</h2>
+            <blockquote class="testimonial-text">
+            Înainte să descopăr această minune eram extrem de stângace în bucătărie, nu îmi reușea să scot nimic comestibil
+            din cuptor sau fierbător. De aproape 3 ani îmi răsfăț familia cu diverse deserturi și aperitive.
+            ,,BackingGod''este soluția tuturor problemelor ,,culinare''. 
+            Sunt o norocoasă că l-am descoperit!
+            </blockquote>
+            <p class="testimonial-author">&mdash;Iolanda Sima</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="grid-3-cols">
+          <img src="5.jpg" alt="bucatarie" />
+          <div class="testimonial-box">
+            <h2>"Totul în jurul meu este curat ca lacrima"</h2>
+            <blockquote class="testimonial-text">
+             În adolescență uram cel mai mult să dau cu aspiratorul.
+             Cred că cel mai bun cadou din viața mea a fost acest robot.
+             Acum pot să stau liniștit și să îmi ocup timpul util, în timp ce ,,Vacuum 10'' lucrează pentru mine.
+            </blockquote>
+            <p class="testimonial-author">&mdash;Paul Rizea</p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section>
+        <h2>Topul Vânzărilor</h2>
+        <div class="grid-3-cols">
+          <figure class="chair">
+            <img src="6.jpg" alt="Chair" />
+            <div class="chair-box">
+              <h3>Vacuum 10</h3>
+              <ul class="chair-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                    />
+                  </svg>
+                  <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                  <span>Senzor de localizare:Lazer</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Funcţionare: 3 ore</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Acumulator: Li-Lon</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                    />
+                  </svg>
+                  <span>Greutate 2 kg
+                  </span>
+                </li>
+              </ul>
+              <div class="chair-price">
+                <strong>14000 lei</strong>
+                <a href="#" class="btn btn--small">Adaugă în coș</a>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="chair">
+            <img src="7.jpg" alt="Chair" />
+            <div class="chair-box">
+              <h3>BackingGod</h3>
+              <ul class="chair-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                    />
+                  <span>Senzor de localizare:Camera</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Funcționare: 5 ore</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Baterie solară</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                    />
+                  </svg>
+                  <span>Greutate: 5 kg
+                  </span>
+                </li>
+              </ul>
+              <div class="chair-price">
+                <strong>16500 lei</strong>
+                <a href="#" class="btn btn--small">Adaugă în coș</a>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="chair">
+            <img src="8.jpg" alt="Chair" />
+            <div class="chair-box">
+              <h3>Lil 2022</h3>
+              <ul class="chair-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                    />
+                  <span>Interactiv</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Funcționare: 48 ore</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Material: Metal/Plastic reciclat</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                    />
+                  </svg>
+                  <span>Greutate: 700 g</span>
+                </li>
+              </ul>
+              <div class="chair-price">
+                <strong>9000 lei</strong>
+                <a href="#" class="btn btn--small">Adaugă în coș</a>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <footer>
+      Realizator:Condrea Mădălina
+      </footer>
+    </div>
+  </body>
+</html>
